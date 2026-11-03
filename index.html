@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garimpo de Passagens RJ | GIG & SDU</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen p-4 md:p-8">
+  <div class="max-w-6xl mx-auto">
+    <header class="mb-8 border-b border-slate-800 pb-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-2xl md:text-3xl font-bold text-sky-400">Garimpo de Passagens RJ</h1>
+        <p class="text-slate-400 text-sm">Alertas diários de voos diretos e com stopover (6 a 10 dias)</p>
+      </div>
+      <span class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs px-3 py-1 rounded-full">
+        Atualizado diariamente
+      </span>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 bg-slate-800/50 p-4 rounded-xl border border-slate-800">
+      <div>
+        <label class="block text-xs font-semibold text-slate-400 mb-1">Origem</label>
+        <select id="filter-origin" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm" onchange="applyFilters()">
+          <option value="ALL">Galeão (GIG) & Santos Dumont (SDU)</option>
+          <option value="GIG">Galeão (GIG)</option>
+          <option value="SDU">Santos Dumont (SDU)</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-slate-400 mb-1">Duração da Viagem</label>
+        <select id="filter-duration" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm" onchange="applyFilters()">
+          <option value="ALL">6 a 10 Dias</option>
+          <option value="6">6 Dias</option>
+          <option value="7">7 Dias</option>
+          <option value="8">8 Dias</option>
+          <option value="9">9 Dias</option>
+          <option value="10">10 Dias</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-slate-400 mb-1">Tipo de Voo</label>
+        <select id="filter-stops" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm" onchange="applyFilters()">
+          <option value="ALL">Direto ou Com Stopover</option>
+          <option value="DIRECT">Apenas Direto</option>
+        </select>
+      </div>
+      <div>
+        <label class="block text-xs font-semibold text-slate-400 mb-1">Ordenar Por</label>
+        <select id="filter-sort" class="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm" onchange="applyFilters()">
+          <option value="discount">Maior Desconto (%)</option>
+          <option value="price">Menor Preço (R$)</option>
+        </select>
+      </div>
+    </section>
+
+    <main id="flight-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></main>
+  </div>
+
+  <script>
+    let allFlights = [];
+
+    async function loadFlights() {
+      try {
+        const res = await fetch('./flights.json?cache=' + Date.now());
+        allFlights = await res.json();
+        applyFilters();
+      } catch (err) {
+        document.getElementById('flight-grid').innerHTML = `
+          <div class="col-span-full text-center py-12 text-slate-400">
+            <p class="text-lg">Aguardando a primeira varredura do robô...</p>
+            <p class="text-sm">O arquivo de dados será gerado na próxima execução diária.</p>
+          </div>`;
+      }
+    }
+
+    function applyFilters() {
+      const origin = document.getElementById('filter-origin').value;
+      const duration = document.getElementById('filter-duration').value;
+      const stops = document.getElementById('filter-stops').value;
+      const sort = document.getElementById('filter-sort').value;
+
+      let filtered = allFlights.filter(f => {
+        if (origin !== 'ALL' && f.origin !== origin) return false;
+        if (duration !== 'ALL' && f.stay_days != duration) return false;
+        if (stops === 'DIRECT' && !f.is_direct) return false;
+        return true;
+      });
+
+      if (sort === 'discount') {
+        filtered.sort((a, b) => b.discount_percentage - a.discount_percentage);
+      } else {
+        filtered.sort((a, b) => a.promo_price - b.promo_price);
+      }
+
+      renderGrid(filtered);
+    }
+
+    function renderGrid(flights) {
+      const grid = document.getElementById('flight-grid');
+      if (flights.length === 0) {
+        grid.innerHTML = `<p class="col-span-full text-center py-8 text-slate-500">Nenhuma oferta encontrada para os filtros selecionados.</p>`;
+        return;
+      }
+
+      grid.innerHTML = flights.map(f => `
+        <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 flex flex-col justify-between hover:border-sky-500/50 transition">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="text-xs font-bold bg-sky-500/10 text-sky-400 px-2 py-1 rounded">
+                ${f.origin} ➔ ${f.destination_code}
+              </span>
+              <span class="text-xs font-bold bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">
+                -${f.discount_percentage}% OFF
+              </span>
+            </div>
+            <h3 class="text-lg font-bold mb-1">${f.destination_name}</h3>
+            <p class="text-xs text-slate-400 mb-4">${f.airline} • ${f.is_direct ? 'Voo Direto' : 'Com Conexão/Stopover'}</p>
+            
+            <div class="text-sm space-y-1 mb-4 text-slate-300">
+              <p>📅 <strong>Ida:</strong> ${f.departure_date}</p>
+              <p>📅 <strong>Volta:</strong> ${f.return_date} (${f.stay_days} dias)</p>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-700/50 pt-4 flex justify-between items-center">
+            <div>
+              <span class="text-xs text-slate-400 block line-through">R$ ${f.original_price}</span>
+              <span class="text-xl font-black text-emerald-400">R$ ${f.promo_price}</span>
+            </div>
+            <a href="${f.booking_url}" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold text-xs px-4 py-2 rounded-lg transition">
+              Ver Oferta
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    loadFlights();
+  </script>
+</body>
+</html>
