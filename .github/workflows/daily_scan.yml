@@ -2,9 +2,8 @@ name: Garimpo Diario de Passagens
 
 on:
   schedule:
-    # Roda automaticamente todos os dias às 06:00 AM (horário de Brasília / 09:00 UTC)
     - cron: '0 9 * * *'
-  workflow_dispatch: # Permite rodar manualmente clicando em um botão
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -26,6 +25,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Instalar Navegador Chromium do Playwright
+        run: playwright install --with-deps chromium
+
       - name: Executar robô de busca
         run: python bot_passagens.py
 
@@ -34,5 +36,5 @@ jobs:
           git config --global user.name "Bot Garimpeiro"
           git config --global user.email "bot@github.com"
           git add flights.json
-          git commit -m "Atualização diária de passagens promocionais [skip ci]" || exit 0
+          git commit -m "Atualização diária de passagens com Playwright [skip ci]" || exit 0
           git push
