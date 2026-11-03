@@ -1,19 +1,5 @@
 [
   {
-    "origin": "SDU",
-    "destination_code": "CGH",
-    "destination_name": "São Paulo (Congonhas)",
-    "airline": "Google Flights",
-    "is_direct": true,
-    "departure_date": "18/12/2026",
-    "return_date": "25/12/2026",
-    "stay_days": 7,
-    "original_price": 450,
-    "promo_price": 351,
-    "discount_percentage": 22,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CGH%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
-  },
-  {
     "origin": "GIG",
     "destination_code": "CGH",
     "destination_name": "São Paulo (Congonhas)",
@@ -23,8 +9,8 @@
     "return_date": "25/12/2026",
     "stay_days": 7,
     "original_price": 450,
-    "promo_price": 359,
-    "discount_percentage": 20,
+    "promo_price": 362,
+    "discount_percentage": 19,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CGH%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
@@ -33,13 +19,13 @@
     "destination_name": "São Paulo (Congonhas)",
     "airline": "Google Flights",
     "is_direct": true,
-    "departure_date": "02/01/2027",
-    "return_date": "09/01/2027",
+    "departure_date": "18/12/2026",
+    "return_date": "25/12/2026",
     "stay_days": 7,
     "original_price": 450,
-    "promo_price": 361,
+    "promo_price": 363,
     "discount_percentage": 19,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CGH%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CGH%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
     "origin": "GIG",
@@ -51,9 +37,23 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 450,
-    "promo_price": 396,
+    "promo_price": 394,
     "discount_percentage": 12,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CGH%20from%20GIG%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
+  },
+  {
+    "origin": "SDU",
+    "destination_code": "CGH",
+    "destination_name": "São Paulo (Congonhas)",
+    "airline": "Google Flights",
+    "is_direct": true,
+    "departure_date": "02/01/2027",
+    "return_date": "09/01/2027",
+    "stay_days": 7,
+    "original_price": 450,
+    "promo_price": 404,
+    "discount_percentage": 10,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CGH%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
   },
   {
     "origin": "GIG",
@@ -65,8 +65,8 @@
     "return_date": "25/12/2026",
     "stay_days": 7,
     "original_price": 550,
-    "promo_price": 465,
-    "discount_percentage": 15,
+    "promo_price": 458,
+    "discount_percentage": 16,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CWB%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
@@ -89,26 +89,12 @@
     "destination_name": "Curitiba (PR)",
     "airline": "Google Flights",
     "is_direct": true,
-    "departure_date": "02/01/2027",
-    "return_date": "09/01/2027",
-    "stay_days": 7,
-    "original_price": 550,
-    "promo_price": 479,
-    "discount_percentage": 12,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CWB%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
-  },
-  {
-    "origin": "SDU",
-    "destination_code": "CWB",
-    "destination_name": "Curitiba (PR)",
-    "airline": "Google Flights",
-    "is_direct": true,
     "departure_date": "18/12/2026",
     "return_date": "25/12/2026",
     "stay_days": 7,
     "original_price": 550,
-    "promo_price": 484,
-    "discount_percentage": 12,
+    "promo_price": 487,
+    "discount_percentage": 11,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CWB%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
@@ -121,9 +107,23 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 600,
-    "promo_price": 499,
-    "discount_percentage": 16,
+    "promo_price": 497,
+    "discount_percentage": 17,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20BSB%20from%20GIG%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
+  },
+  {
+    "origin": "SDU",
+    "destination_code": "CWB",
+    "destination_name": "Curitiba (PR)",
+    "airline": "Google Flights",
+    "is_direct": true,
+    "departure_date": "02/01/2027",
+    "return_date": "09/01/2027",
+    "stay_days": 7,
+    "original_price": 550,
+    "promo_price": 499,
+    "discount_percentage": 9,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20CWB%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
   },
   {
     "origin": "SDU",
@@ -135,9 +135,23 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 600,
-    "promo_price": 500,
-    "discount_percentage": 16,
+    "promo_price": 506,
+    "discount_percentage": 15,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20BSB%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
+  },
+  {
+    "origin": "SDU",
+    "destination_code": "BSB",
+    "destination_name": "Brasília (DF)",
+    "airline": "Google Flights",
+    "is_direct": true,
+    "departure_date": "18/12/2026",
+    "return_date": "25/12/2026",
+    "stay_days": 7,
+    "original_price": 600,
+    "promo_price": 537,
+    "discount_percentage": 10,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20BSB%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
     "origin": "GIG",
@@ -149,23 +163,9 @@
     "return_date": "25/12/2026",
     "stay_days": 7,
     "original_price": 600,
-    "promo_price": 538,
-    "discount_percentage": 10,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20BSB%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
-  },
-  {
-    "origin": "SDU",
-    "destination_code": "BSB",
-    "destination_name": "Brasília (DF)",
-    "airline": "Google Flights",
-    "is_direct": true,
-    "departure_date": "18/12/2026",
-    "return_date": "25/12/2026",
-    "stay_days": 7,
-    "original_price": 600,
-    "promo_price": 550,
+    "promo_price": 548,
     "discount_percentage": 8,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20BSB%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20BSB%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
     "origin": "SDU",
@@ -177,7 +177,7 @@
     "return_date": "25/12/2026",
     "stay_days": 7,
     "original_price": 750,
-    "promo_price": 612,
+    "promo_price": 610,
     "discount_percentage": 18,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FLN%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
@@ -187,27 +187,13 @@
     "destination_name": "Florianópolis (SC)",
     "airline": "Google Flights",
     "is_direct": true,
-    "departure_date": "02/01/2027",
-    "return_date": "09/01/2027",
+    "departure_date": "18/12/2026",
+    "return_date": "25/12/2026",
     "stay_days": 7,
     "original_price": 750,
-    "promo_price": 643,
-    "discount_percentage": 14,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FLN%20from%20GIG%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
-  },
-  {
-    "origin": "GIG",
-    "destination_code": "SSA",
-    "destination_name": "Salvador (BA)",
-    "airline": "Google Flights",
-    "is_direct": true,
-    "departure_date": "02/01/2027",
-    "return_date": "09/01/2027",
-    "stay_days": 7,
-    "original_price": 850,
-    "promo_price": 667,
-    "discount_percentage": 21,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SSA%20from%20GIG%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
+    "promo_price": 611,
+    "discount_percentage": 18,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FLN%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
     "origin": "SDU",
@@ -219,8 +205,8 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 750,
-    "promo_price": 675,
-    "discount_percentage": 10,
+    "promo_price": 653,
+    "discount_percentage": 12,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FLN%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
   },
   {
@@ -229,41 +215,13 @@
     "destination_name": "Florianópolis (SC)",
     "airline": "Google Flights",
     "is_direct": true,
-    "departure_date": "18/12/2026",
-    "return_date": "25/12/2026",
+    "departure_date": "02/01/2027",
+    "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 750,
-    "promo_price": 681,
-    "discount_percentage": 9,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FLN%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
-  },
-  {
-    "origin": "GIG",
-    "destination_code": "SSA",
-    "destination_name": "Salvador (BA)",
-    "airline": "Google Flights",
-    "is_direct": true,
-    "departure_date": "18/12/2026",
-    "return_date": "25/12/2026",
-    "stay_days": 7,
-    "original_price": 850,
-    "promo_price": 692,
-    "discount_percentage": 18,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SSA%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
-  },
-  {
-    "origin": "SDU",
-    "destination_code": "SSA",
-    "destination_name": "Salvador (BA)",
-    "airline": "Google Flights",
-    "is_direct": true,
-    "departure_date": "18/12/2026",
-    "return_date": "25/12/2026",
-    "stay_days": 7,
-    "original_price": 850,
-    "promo_price": 716,
-    "discount_percentage": 15,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SSA%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
+    "promo_price": 667,
+    "discount_percentage": 11,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FLN%20from%20GIG%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
   },
   {
     "origin": "SDU",
@@ -275,9 +233,51 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 850,
-    "promo_price": 746,
-    "discount_percentage": 12,
+    "promo_price": 726,
+    "discount_percentage": 14,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SSA%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
+  },
+  {
+    "origin": "GIG",
+    "destination_code": "SSA",
+    "destination_name": "Salvador (BA)",
+    "airline": "Google Flights",
+    "is_direct": true,
+    "departure_date": "02/01/2027",
+    "return_date": "09/01/2027",
+    "stay_days": 7,
+    "original_price": 850,
+    "promo_price": 728,
+    "discount_percentage": 14,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SSA%20from%20GIG%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
+  },
+  {
+    "origin": "GIG",
+    "destination_code": "SSA",
+    "destination_name": "Salvador (BA)",
+    "airline": "Google Flights",
+    "is_direct": true,
+    "departure_date": "18/12/2026",
+    "return_date": "25/12/2026",
+    "stay_days": 7,
+    "original_price": 850,
+    "promo_price": 730,
+    "discount_percentage": 14,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SSA%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
+  },
+  {
+    "origin": "GIG",
+    "destination_code": "REC",
+    "destination_name": "Recife (PE)",
+    "airline": "Google Flights",
+    "is_direct": true,
+    "departure_date": "18/12/2026",
+    "return_date": "25/12/2026",
+    "stay_days": 7,
+    "original_price": 950,
+    "promo_price": 762,
+    "discount_percentage": 19,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20REC%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
     "origin": "SDU",
@@ -294,6 +294,20 @@
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20REC%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
+    "origin": "SDU",
+    "destination_code": "SSA",
+    "destination_name": "Salvador (BA)",
+    "airline": "Google Flights",
+    "is_direct": true,
+    "departure_date": "18/12/2026",
+    "return_date": "25/12/2026",
+    "stay_days": 7,
+    "original_price": 850,
+    "promo_price": 772,
+    "discount_percentage": 9,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SSA%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
+  },
+  {
     "origin": "GIG",
     "destination_code": "REC",
     "destination_name": "Recife (PE)",
@@ -303,8 +317,8 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 950,
-    "promo_price": 778,
-    "discount_percentage": 18,
+    "promo_price": 860,
+    "discount_percentage": 9,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20REC%20from%20GIG%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
   },
   {
@@ -317,26 +331,12 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 950,
-    "promo_price": 846,
-    "discount_percentage": 10,
+    "promo_price": 869,
+    "discount_percentage": 8,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20REC%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
   },
   {
     "origin": "GIG",
-    "destination_code": "REC",
-    "destination_name": "Recife (PE)",
-    "airline": "Google Flights",
-    "is_direct": true,
-    "departure_date": "18/12/2026",
-    "return_date": "25/12/2026",
-    "stay_days": 7,
-    "original_price": 950,
-    "promo_price": 861,
-    "discount_percentage": 9,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20REC%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
-  },
-  {
-    "origin": "GIG",
     "destination_code": "FOR",
     "destination_name": "Fortaleza (CE)",
     "airline": "Google Flights",
@@ -345,23 +345,9 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 1100,
-    "promo_price": 911,
-    "discount_percentage": 17,
+    "promo_price": 874,
+    "discount_percentage": 20,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FOR%20from%20GIG%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
-  },
-  {
-    "origin": "GIG",
-    "destination_code": "NAT",
-    "destination_name": "Natal (RN)",
-    "airline": "Google Flights",
-    "is_direct": true,
-    "departure_date": "18/12/2026",
-    "return_date": "25/12/2026",
-    "stay_days": 7,
-    "original_price": 1150,
-    "promo_price": 960,
-    "discount_percentage": 16,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20NAT%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
     "origin": "SDU",
@@ -373,23 +359,23 @@
     "return_date": "09/01/2027",
     "stay_days": 7,
     "original_price": 1100,
-    "promo_price": 960,
-    "discount_percentage": 12,
+    "promo_price": 888,
+    "discount_percentage": 19,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FOR%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
   },
   {
     "origin": "SDU",
-    "destination_code": "NAT",
-    "destination_name": "Natal (RN)",
+    "destination_code": "FOR",
+    "destination_name": "Fortaleza (CE)",
     "airline": "Google Flights",
     "is_direct": true,
-    "departure_date": "02/01/2027",
-    "return_date": "09/01/2027",
+    "departure_date": "18/12/2026",
+    "return_date": "25/12/2026",
     "stay_days": 7,
-    "original_price": 1150,
-    "promo_price": 970,
-    "discount_percentage": 15,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20NAT%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
+    "original_price": 1100,
+    "promo_price": 891,
+    "discount_percentage": 19,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FOR%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
     "origin": "GIG",
@@ -401,22 +387,36 @@
     "return_date": "25/12/2026",
     "stay_days": 7,
     "original_price": 1100,
-    "promo_price": 978,
-    "discount_percentage": 11,
+    "promo_price": 947,
+    "discount_percentage": 13,
     "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20FOR%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
   },
   {
-    "origin": "GIG",
-    "destination_code": "SLZ",
-    "destination_name": "São Luís (MA)",
+    "origin": "SDU",
+    "destination_code": "NAT",
+    "destination_name": "Natal (RN)",
     "airline": "Google Flights",
     "is_direct": true,
     "departure_date": "18/12/2026",
     "return_date": "25/12/2026",
     "stay_days": 7,
-    "original_price": 1200,
-    "promo_price": 990,
+    "original_price": 1150,
+    "promo_price": 952,
     "discount_percentage": 17,
-    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SLZ%20from%20GIG%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20NAT%20from%20SDU%20on%202026-12-18%20through%202026-12-25&hl=pt-BR&gl=BR"
+  },
+  {
+    "origin": "SDU",
+    "destination_code": "SLZ",
+    "destination_name": "São Luís (MA)",
+    "airline": "Google Flights",
+    "is_direct": true,
+    "departure_date": "02/01/2027",
+    "return_date": "09/01/2027",
+    "stay_days": 7,
+    "original_price": 1200,
+    "promo_price": 983,
+    "discount_percentage": 18,
+    "booking_url": "https://www.google.com/travel/flights?q=Flights%20to%20SLZ%20from%20SDU%20on%202027-01-02%20through%202027-01-09&hl=pt-BR&gl=BR"
   }
 ]
