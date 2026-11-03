@@ -1,9 +1,7 @@
 name: Garimpo Diario de Passagens
 
 on:
-  schedule:
-    - cron: '0 9 * * *'
-  workflow_dispatch:
+   workflow_dispatch:
 
 permissions:
   contents: write
